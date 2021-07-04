@@ -13,4 +13,4 @@ Code will be published soon!
 
 2 Release train code (you know, in a mass )
 
-Feel free to contact me if your have any problems! zhaomy20@fudan.edu.cn
+Feel free to contact me if you have any problems! zhaomy20@fudan.edu.cn
