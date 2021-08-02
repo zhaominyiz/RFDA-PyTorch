@@ -1,4 +1,4 @@
-# RF-Pytorch
+# RFDA-Pytorch
 Official Code for 'Recursive Fusion and Deformable Spatiotemporal Attention for Video Compression Artifact Reduction' 
 
 ACM Multimedia 2021 (ACMMM2021) Accepted Paper 
