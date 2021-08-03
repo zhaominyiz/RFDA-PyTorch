@@ -16,4 +16,8 @@ Code will be published soon!
 Feel free to contact me if you have any problems! zhaomy20@fudan.edu.cn
 
 # Visualization Video Demo
-https://github.com/zhaominyiz/RFDA-PyTorch/blob/main/RFDA_Visualization_DEMO.mp4
+
+
+https://user-images.githubusercontent.com/43022408/127981531-f98ce54c-7b9d-4e12-903b-9b4bb0baf1f5.mp4
+
+
