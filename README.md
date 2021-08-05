@@ -9,9 +9,9 @@ Code will be published soon!
 
 # Open Source Scheduler
 
-1 Release RF and DSTA core code within one month after camera ready
+1 Release RF and DSTA core code within one month after camera ready [Done]
 
-2 Release train code (you know, in a mass )
+2 Release train code (you know, in a mass ) [TBD]
 
 Feel free to contact me if you have any problems! zhaomy20@fudan.edu.cn
 
