@@ -13,7 +13,9 @@ from PIL import Image
 # ==========
 # Spatio-temporal deformable fusion module
 # ==========
-
+# The STDF module is implemented by RyanXingQL
+# Thanks for his work! you may refer to https://github.com/RyanXingQL/STDF-PyTorch
+# for more details about this.
 class STDF(nn.Module):
     def __init__(self, in_nc, out_nc, nf, nb, base_ks=3, deform_ks=3):
         """
@@ -159,7 +161,7 @@ class PlainCNN(nn.Module):
         out = self.out_conv(out)
         return out
 
-# 空网络 直接返回
+# Empty Layer
 class EmptyLayer(nn.Module):
     def __init__(self):
         super(EmptyLayer, self).__init__()
@@ -171,19 +173,6 @@ class EmptyLayer(nn.Module):
 # RFDA network
 # ==========
 class RFDA(nn.Module):
-# ==========
-# RFDA network
-# ==========
-    """
-    Road 1:
-    STDF -> QE -> residual.
-            |
-            v
-    Road 2:
-    WARP -> QE -> residual.
-    in: (B T C H W)
-    out: (B C H W)
-    """
     def __init__(self,opts_dict):
         super(RFDA,self).__init__()
         self.radius = 3
@@ -243,7 +232,8 @@ class RFDA(nn.Module):
                 )
         self.hint = None
 
-
+    # x is the input reference frames
+    # y is the preceding hidden state feature
     def forward(self,x,y=None):
         x = x.contiguous()
         # [B F H W]
