@@ -18,6 +18,8 @@ The code will be gradually open source!
 
 4 Release RFDA on RGB space
 
+5 Discuss a perceptual RF variant
+
 Feel free to contact me if you have any problems! zhaomy20@fudan.edu.cn
 
 ## 1. Pre-request
@@ -66,6 +68,13 @@ $ python simple_check.py
 RFDAQP22,27,32,37,42(trained on YUV space): Coming Soon
 
 RFDAQP37(trained on RGB space): TBD
+## Results
+### Comparison with State of the art Methods
+![vssota](https://user-images.githubusercontent.com/43022408/128298532-eef7785f-0068-4a7f-9c74-351fe49c497c.png)
+
+### Speed and parameter size comparison
+![speedvs](https://user-images.githubusercontent.com/43022408/128298558-03a3844c-2ba2-4cc0-975e-db36c9664228.png)
+
 ## Visualization Video Demo
 
 
