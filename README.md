@@ -12,7 +12,11 @@ The code will be gradually open source!
 
 1 Release RF and DSTA core code within one month after camera ready [Done]
 
-2 Release train code (you know, in a mass ) [TBD]
+2 Release test code and models at five QP(coming soon!)
+
+3 Release train code (you know, in a mass )
+
+4 Release RFDA on RGB space
 
 Feel free to contact me if you have any problems! zhaomy20@fudan.edu.cn
 
@@ -60,6 +64,7 @@ $ python simple_check.py
 ### Test your own video clip
 ## Pretrain models
 RFDAQP22,27,32,37,42(trained on YUV space): Coming Soon
+
 RFDAQP37(trained on RGB space): TBD
 ## Visualization Video Demo
 
