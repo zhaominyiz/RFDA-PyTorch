@@ -82,6 +82,7 @@ https://user-images.githubusercontent.com/43022408/127981531-f98ce54c-7b9d-4e12-
 
 ## Related Works
 · Boosting the performance of video compression artifact reduction with reference frame proposals and frequency domain information [[Paper]](https://openaccess.thecvf.com/content/CVPR2021W/NTIRE/papers/Xu_Boosting_the_Performance_of_Video_Compression_Artifact_Reduction_With_Reference_CVPRW_2021_paper.pdf)
+
 · Non-local convlstm for video compression artifact reduction [[Paper]](https://openaccess.thecvf.com/content_ICCV_2019/papers/Xu_Non-Local_ConvLSTM_for_Video_Compression_Artifact_Reduction_ICCV_2019_paper.pdf) [[Code]](https://github.com/xyiyy/NL-ConvLSTM)
 
 ## Special Thanks
