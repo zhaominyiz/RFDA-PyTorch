@@ -53,7 +53,13 @@ $ python simple_check.py
 
 > The DCNv2 source files here is different from the [open-sourced version](https://github.com/chengdazhi/Deformable-Convolution-V2-PyTorch) due to incompatibility. [[issue]](https://github.com/open-mmlab/mmediting/issues/84#issuecomment-644974315)
 
+## Train
 
+## Test
+### Test MFQE 2.0 dataset
+### Test your own video clip
+## Pretrain models
+RFDAQP22,27,32,37,42: TBD
 ## Visualization Video Demo
 
 
