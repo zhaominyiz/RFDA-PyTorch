@@ -28,10 +28,10 @@ Feel free to contact me if you have any problems! zhaomy20@fudan.edu.cn
 Suppose that you have installed CUDA 10.1, then:
 
 ```bash
-$ git clone --depth=1 https://github.com/RyanXingQL/STDF-PyTorch 
-$ cd STDF-PyTorch/
-$ conda create -n stdf python=3.7 -y
-$ conda activate stdf
+$ git clone --depth=1 https://github.com/zhaominyiz/RFDA-PyTorch 
+$ cd RFDA-PyTorch/
+$ conda create -n video python=3.7 -y
+$ conda activate video
 $ python -m pip install torch==1.6.0+cu101 torchvision==0.7.0+cu101 -f https://download.pytorch.org/whl/torch_stable.html
 $ python -m pip install tqdm lmdb pyyaml opencv-python scikit-image
 ```
@@ -59,7 +59,8 @@ $ python simple_check.py
 ### Test MFQE 2.0 dataset
 ### Test your own video clip
 ## Pretrain models
-RFDAQP22,27,32,37,42: TBD
+RFDAQP22,27,32,37,42(trained on YUV space): Coming Soon
+RFDAQP37(trained on RGB space): TBD
 ## Visualization Video Demo
 
 
