@@ -85,5 +85,16 @@ https://user-images.githubusercontent.com/43022408/127981531-f98ce54c-7b9d-4e12-
 
 · Non-local convlstm for video compression artifact reduction [[Paper]](https://openaccess.thecvf.com/content_ICCV_2019/papers/Xu_Non-Local_ConvLSTM_for_Video_Compression_Artifact_Reduction_ICCV_2019_paper.pdf) [[Code]](https://github.com/xyiyy/NL-ConvLSTM)
 
+## Citation
+If you find this project is useful for your research, please cite:
+```
+@article{zhao2021recursive,
+  title={Recursive Fusion and Deformable Spatiotemporal Attention for Video Compression Artifact Reduction},
+  author={Zhao, Minyi and Xu, Yi and Zhou, Shuigeng},
+  journal={arXiv preprint arXiv:2108.02110},
+  year={2021}
+}
+```
+
 ## Special Thanks
 Our framework is based on [STDF-Pytoch](https://github.com/RyanXingQL/STDF-PyTorch). Thank [RyanXingQL](https://github.com/RyanXingQL) for his work!
