@@ -248,7 +248,7 @@ class RFDA(nn.Module):
         # [B F H W]
         out = self.wpnet(out)
         # print(org.size(),"vs",out.size())
-        out = self.fuse(torch.cat((org,out),1))*1.0 + org
+        out = self.fuse(torch.cat((org,out),1))*0.2 + org
         hidden = out.clone()
         return self.qenet(out) + x[:, [self.radius + i*(2*self.radius+1) for i in range(self.color)], ...],hidden
         
