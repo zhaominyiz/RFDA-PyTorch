@@ -12,7 +12,7 @@ The code will be gradually open source!
 
 1 Release RF and DSTA core code within one month after camera ready [Done]
 
-2 Release test code and models at five QP(coming soon!)
+2 Release test code and models at five QP(Oct. 2021)
 
 3 Release train code (you know, in a mass )
 
