@@ -65,6 +65,9 @@ $ python simple_check.py
 ## :zap: 3. Test :zap:
 ### 3.1 Test MFQE 2.0 dataset
 ### 3.2 Test your own video clip
+For yuv videos, you may refer to test_one_video_yuv_RF.py.
+
+For rgb videos, we will update new model and codes soon.
 ## :seedling: 3.3 Pretrain models :seedling:
 RFDAQP22,27,32,37,42(trained on YUV space): [BaiduDisk](https://pan.baidu.com/s/1Py4_2-I5gq9LuoudKLZoUA) (RFDA) [GoogleDisk](https://drive.google.com/file/d/1HbNgmr4sxAxa4jaek7WLbqB4gHOhjKn0/view?usp=sharing)
 
