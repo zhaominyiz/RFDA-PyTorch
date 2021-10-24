@@ -1,0 +1,99 @@
+dataset:
+  train:  # LMDB
+    type: MFQEv2RTDataset
+    
+    # for create lmdb
+    root: data/MFQEv2_dataset/
+    gt_folder: train_108/raw/
+    lq_folder: train_108/HM16.5_LDP/QP37/
+
+    # for dataset
+    gt_path: mfqev2_hq_gt.lmdb
+    lq_path: mfqev2_hq_qp37_lq.lmdb
+    lq_dir: train_108/rawframes/
+    meta_info_fp: meta_info.txt
+    gt_size: 96  # ground truth patch size: gt_size * gt_size
+    use_flip: True
+    use_rot: True  # rotation per 90 degrees
+    random_reverse: False
+    # for datasampler
+    enlarge_ratio: 300  # enlarge dataset by randomly cropping.
+    
+    # for dataloader
+    num_worker_per_gpu: 6  # 12 in total. mainly affect IO speed
+    batch_size_per_gpu: 8  # bs=32, divided by 4 GPUs
+
+  test:  # Disk IO
+    type: VideoTestMFQEv2RTDataset
+    root: data/MFQEv2_dataset/
+    gt_path: test_18/raw/
+    lq_path: test_18/HM16.5_LDP/QP37/
+
+
+  val:  # Disk IO
+    type: VideoTestMFQEv2RTDataset
+    root: data/MFQEv2_dataset/
+    gt_path: test_18/raw/
+    lq_path: test_18/HM16.5_LDP/QP37/
+
+network:
+  radius: 7  # total num of input frame = 2 * radius + 1
+
+  stdf:
+    in_nc: 1  # 1 for Y
+    out_nc: 64
+    nf: 32  # num of feature maps
+    nb: 3  # num of conv layers
+    base_ks: 3
+    deform_ks: 3  # size of the deformable kernel
+  
+  qenet:
+    netname: default 
+    method: replace
+    in_nc: 64  # = out_nc of stdf
+    out_nc: 1  # 1 for Y
+    nf: 48
+    nb: 8
+    base_ks: 3
+
+    att: True
+    attname: DSTA
+
+train:
+  is_dist: True
+  exp_name: RFDA_QP37_MFQEv2 # default: timestr. None: ~
+  random_seed: 233
+  pre-val: False  # evaluate criterion before training, e.g., ori PSNR
+  num_iter: !!float 1e+5
+  interval_print: !!float 20
+  # interval_val: !!float 10e+3  # also save model
+  interval_val: !!float 2500  # also save model
+  pbar_len: 100
+
+  optim:
+    type: Adam
+    lr: !!float 1e-4  # init lr of scheduler
+    betas: [0.9, 0.999]
+    eps: !!float 1e-08
+
+  scheduler:
+    is_on: True
+    type: MultiStepLR
+    milestones: [0.8,0.9]
+    gamma: 0.5
+
+  loss:
+    type: CharbonnierLoss
+    eps: !!float 1e-6
+
+  criterion:
+    type: PSNR
+    unit: dB
+
+test:
+  restore_iter: !!float 25000
+  pbar_len: 100
+  checkpoint_save_path: './exp/NTIRE21_R3_enlarge300x/ckp_500000.pt'
+  criterion:
+    type: PSNR
+    unit: dB
