@@ -66,6 +66,9 @@ $ python simple_check.py
 ### 3.1 Test MFQE 2.0 dataset
 ### 3.2 Test your own video clip
 For yuv videos, you may refer to test_one_video_yuv_RF.py.
+```bash
+$ python test_one_video_yuv_RF.py --opt_path cofig/****.yml
+```
 
 For rgb videos, we will update new model and codes soon.
 ## :seedling: 3.3 Pretrain models :seedling:
