@@ -12,9 +12,9 @@ The code will be gradually open source!
 
 1 Release RF and DSTA core code within one month after camera ready [Done]
 
-2 Release test code and models at five QP(Oct. 2021)
+2 Release test code and models at five QP [Done]
 
-3 Release train code (you know, in a mass )
+3 Release train code (you know, in a mass ) [TBD]
 
 4 Release RFDA on RGB space
 
@@ -82,7 +82,7 @@ RFDAQP22,27,32,37,42(trained on YUV space): [BaiduDisk](https://pan.baidu.com/s/
 
 RFDAQP37(trained on RGB space): ToBeDone!
 ## :beers: Results :beers:
-### Comparison with State of the art Methods
+### Comparison with State of the Art Methods
 ![vssota](https://user-images.githubusercontent.com/43022408/128298532-eef7785f-0068-4a7f-9c74-351fe49c497c.png)
 
 ### Speed and parameter size comparison
