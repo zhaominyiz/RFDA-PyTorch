@@ -64,6 +64,12 @@ $ python simple_check.py
 
 ## :zap: 3. Test :zap:
 ### 3.1 Test MFQE 2.0 dataset
+Please build the MFQE 2.0 dataset first (See [Here](https://github.com/RyanXingQL/STDF-PyTorch)), then run test_yuv_RF.py.
+
+More instructions will coming soon!
+```bash
+$ python test_yuv_RF.py --opt_path cofig/****.yml
+```
 ### 3.2 Test your own video clip
 For yuv videos, you may refer to test_one_video_yuv_RF.py.
 ```bash
