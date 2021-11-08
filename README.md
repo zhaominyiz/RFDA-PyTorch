@@ -101,10 +101,11 @@ https://user-images.githubusercontent.com/43022408/127981531-f98ce54c-7b9d-4e12-
 ## :satisfied: Citation :satisfied:
 If you find this project is useful for your research, please cite:
 ```
-@article{zhao2021recursive,
+@inproceedings{zhao2021recursive,
   title={Recursive Fusion and Deformable Spatiotemporal Attention for Video Compression Artifact Reduction},
   author={Zhao, Minyi and Xu, Yi and Zhou, Shuigeng},
-  journal={arXiv preprint arXiv:2108.02110},
+  booktitle={Proceedings of the 29th ACM International Conference on Multimedia},
+  pages={5646--5654},
   year={2021}
 }
 ```
