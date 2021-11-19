@@ -7,7 +7,10 @@ from torch.nn import functional as F
 from math import floor, ceil
 from ops.dcn.deform_conv import ModulatedDeformConv
 
-
+def default_conv(in_channels, out_channels, kernel_size, bias=True):
+    return nn.Conv2d(
+        in_channels, out_channels, kernel_size,
+        padding=(kernel_size//2), bias=bias)
 
 class DSTA(nn.Module):
     def __init__(self, n_feats, conv=default_conv):
