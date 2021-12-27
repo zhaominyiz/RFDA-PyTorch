@@ -14,7 +14,7 @@ The code will be gradually open source!
 
 2 Release test code and models at five QP [Done]
 
-3 Release train code (you know, in a mass ) [TBD]
+3 Release train code (you know, in a mass ) [TBD, Around Chinese Lunar New Year]
 
 4 Release RFDA on RGB space
 
