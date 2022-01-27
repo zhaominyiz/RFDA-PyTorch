@@ -89,7 +89,7 @@ For rgb videos, we will update new model and codes soon.
 ## :seedling: 3.3 Pretrain models :seedling:
 RFDAQP22,27,32,37,42(trained on YUV space): [BaiduDisk](https://pan.baidu.com/s/1Py4_2-I5gq9LuoudKLZoUA) (RFDA) [GoogleDisk](https://drive.google.com/file/d/1HbNgmr4sxAxa4jaek7WLbqB4gHOhjKn0/view?usp=sharing)
 
-RFDAQP37(trained on RGB space): ToBeDone!
+BRFQP37(trained on YUV space): ToBeDone!
 ## :beers: Results :beers:
 ### Comparison with State of the Art Methods
 ![vssota](https://user-images.githubusercontent.com/43022408/128298532-eef7785f-0068-4a7f-9c74-351fe49c497c.png)
