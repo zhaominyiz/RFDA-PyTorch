@@ -19,8 +19,13 @@ The code will be gradually open source!
 4 Release its updated version BRF, with the following performance [TBD, Within One Week!]
 
 Name \delta PSNR Params FPS(1080P)
+
+
 RFDA 0.91 1250 1.05
+
+
 BRF 1.01 739 1.49
+
 
 I am not satisfied with this variant, however, it may be useful. Therefore, i decide to release it. It can be future improved by stacking our DSTA blocks.
 
