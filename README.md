@@ -14,11 +14,15 @@ The code will be gradually open source!
 
 2 Release test code and models at five QP [Done]
 
-3 Release train code (you know, in a mass ) [TBD, Around Chinese Lunar New Year]
+3 Release train code (you know, in a mass ) [TBD, Within One Week!]
 
-4 Release RFDA on RGB space
+4 Release its updated version BRF, with the following performance [TBD, Within One Week!]
 
-5 Discuss a perceptual RF variant
+Name \delta PSNR Params FPS(1080P)
+RFDA 0.91 1250 1.05
+BRF 1.01 739 1.49
+
+I am not satisfied with this variant, however, it may be useful. Therefore, i decide to release it. It can be future improved by stacking our DSTA blocks.
 
 ## :e-mail: Contact :e-mail:
 Feel free to contact me if you have any problems! zhaomy20@fudan.edu.cn
