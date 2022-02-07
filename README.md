@@ -14,7 +14,7 @@ The code will be gradually open source!
 
 2 Release test code and models at five QP [Done]
 
-3 Release train code (you know, in a mass ) [TBD, Within One Week!]
+3 Release train code (you know, in a mass ) [Done]
 
 4 Release its updated version BRF, with the following performance [TBD, Within One Week!]
 
@@ -70,6 +70,9 @@ $ python simple_check.py
 > The DCNv2 source files here is different from the [open-sourced version](https://github.com/chengdazhi/Deformable-Convolution-V2-PyTorch) due to incompatibility. [[issue]](https://github.com/open-mmlab/mmediting/issues/84#issuecomment-644974315)
 
 ## :fire: 2. Train :fire:
+### Build the dataset! check create_lmdb_mfqe_rf.py
+### Train RF only!
+### Train RFDA! check train_rf_ft.py!
 
 ## :zap: 3. Test :zap:
 ### 3.1 Test MFQE 2.0 dataset
