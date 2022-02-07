@@ -26,7 +26,7 @@ from .metrics import (calculate_psnr, calculate_ssim, calculate_mse)
 from .deep_learning import (set_random_seed, init_dist, get_dist_info, 
 DistSampler, create_dataloader, CharbonnierLoss, PSNR, CosineAnnealingRestartLR)
 #,L1FFTLoss,L2FFTLoss,L2SSIMLoss,OffsetFidelityLoss,CharbFFTLoss,L1FFTL2Loss)
-from .deep_learning import OffsetFidelityLoss,L1FFTGRALoss
+# from .deep_learning import OffsetFidelityLoss,L1FFTGRALoss
 from .system import (mkdir, get_timestr, Timer, Counter)
 from .lmdb import make_lmdb_from_imgs, make_y_lmdb_from_yuv,make_lmdb_from_imgs_v2
 
