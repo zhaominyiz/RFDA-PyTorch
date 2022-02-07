@@ -80,12 +80,12 @@ Please build the MFQE 2.0 dataset first (See [Here](https://github.com/RyanXingQ
 
 More instructions will coming soon!
 ```bash
-$ python test_yuv_RF.py --opt_path cofig/****.yml
+$ python test_yuv_RF.py --opt_path config/****.yml
 ```
 ### 3.2 Test your own video clip
 For yuv videos, you may refer to test_one_video_yuv_RF.py.
 ```bash
-$ python test_one_video_yuv_RF.py --opt_path cofig/****.yml
+$ python test_one_video_yuv_RF.py --opt_path config/****.yml
 ```
 
 For rgb videos, we will update new model and codes soon.
