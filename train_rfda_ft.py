@@ -16,7 +16,7 @@ from collections import OrderedDict
 from PIL import Image
 import utils  # my tool box
 import dataset
-from net_prefix import RTVQE
+from net_rfda import RFDA
 # torch.autograd.set_detect_anomaly(True)
 def receive_arg():
     """Process all hyper-parameters and experiment settings.
@@ -199,7 +199,7 @@ def main():
     # create model
     # ==========
 
-    model = RTVQE(opts_dict=opts_dict['network'])
+    model = RFDA(opts_dict=opts_dict['network'])
 
     model = model.to(rank)
     # if opts_dict['train']['is_dist']:
